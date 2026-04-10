@@ -1,5 +1,4 @@
-import dotenv from "dotenv";
-dotenv.config();
+
 
 function loadHTML(id, file) {
   const element = document.getElementById(id);
@@ -31,7 +30,7 @@ const messageInput = document.querySelector(".message-input");
 const sendMessageButton = document.querySelector("#send-message");
 
 //API setup
-const API_KEY = process.env.API_KEY;
+const API_KEY = "";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
 
 const userData = {
